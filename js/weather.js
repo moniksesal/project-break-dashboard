@@ -5,6 +5,10 @@
 const actualWeather = document.getElementById("actualWeather")
 const futureWeather = document.getElementById("futureWeather")
 
+// necesito: ciudad y pais, estado del clima, imagen y grados celsius, precip, humedad, viento km/h
+//location.name, location.country
+//current.condition.text, current.condition.icon, current.temp_c,forecast.forecastday.hour.chance_of_rain, current.humidity, current.wind_kph,
+
 const getWeather = async (city) => {
     try {
         const apiKey = "814bac6b1da8453ca23112530250312"
@@ -18,9 +22,6 @@ const getWeather = async (city) => {
     }
 }
 
-// necesito: ciudad y pais, estado del clima, imagen y grados celsius, precip, humedad, viento km/h
-//location.name, location.country
-//current.condition.text, current.condition.icon, current.temp_c,forecast.forecastday.hour.chance_of_rain, current.humidity, current.wind_kph,
 const currentWeather = (data) => {
     const { name: city, country } = data.location
     const { temp_c, humidity, wind_kph, condition } = data.current
