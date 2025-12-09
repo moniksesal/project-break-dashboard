@@ -11,6 +11,51 @@
   <link rel="stylesheet" href="./css/weather.css">
 </head> 
 <body>
+  <main class="main">
+    <section class="link-dashboard">
+      <div class="link-container">
+          <h1>Guarda tus links preferidos</h1>
+          <input type="text" id="nameLink" required placeholder="Añade el nombre...">
+          <input type="text" id="URLLink" required placeholder="Añade el link...">
+          <button id="addButton" class="add-button">Añadir</button>
+      </div>
+      <ul id="listedLinks" class="listedLinks"></ul>
+    </section>
+    <section class="clock-dashboard">
+      <div class="clock-container" id="clock-container">
+          <div class="clock" id="clock">
+              <div class="time" id="time"></div>
+          </div>
+          <div class="date" id="date"></div>
+      </div>
+    </section>
+    <section class="weather-dashboard">
+      <div class="weatherContainer">
+          <div id="actualWeather" class="actualWeather"></div>
+          <div id="futureWeather" class="futureWeather"></div>
+      </div>
+    </section>
+    <section class="password-dashboard">
+      <h1>Crea tu contraseña segura</h1>
+      <div class="password-container">
+          <label for="lengthPass"></label>
+          <input type="number" id="lengthPass" min="12" max="50" step="1">
+          <button id="buttonPass" class="buttonPass">Generar contraseña</button>
+          <input type="password" id="resultPass" class="resultPass" readonly>
+          <button id="togglePass">
+              <img src="./assets/noVisiblePass.png" id="closedEyeIcon" class="closedEyeIcon" alt="closedEyeIcon">
+          </button>
+      </div>
+    </section>
+  </main>
+    <footer class="footer">
+        <nav class="nav">
+            <a href="./clock.html"><img src="./assets/calendar.png" alt="calendar"></a>
+            <a href="./password.html"><img src="./assets/key.png" alt="key"></a>
+            <a href="./links.html"><img src="./assets/link.png" alt="link"></a>
+            <a href="/weather.html"><img src="./assets/weather.png" alt="weather"></a>
+        </nav>
+    </footer>
     <script src="./js/clock.js"></script>
     <script src="./js/links.js"></script>
     <script src="./js/password.js"></script>
