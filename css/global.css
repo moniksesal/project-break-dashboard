@@ -4,6 +4,7 @@
 	--primaryfont: "Inter", sans-serif;
 	--titlesizefont: 30px;
 	--colordecoration: #ffd2f2;
+	--blacktransparentbox: #00000055;
 }
 
 html, body, div, span, applet, object, iframe,

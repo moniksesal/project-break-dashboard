@@ -1,3 +1,9 @@
+.main {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
 /*LINKS*/
 
 .link-box {
@@ -10,6 +16,7 @@
     border-radius: 15px;
     gap: 10px;
     margin-top: 10px;
+    height: 800px;
 }
 
 .nameLink, .URLLink {
@@ -30,7 +37,8 @@
 }
 
 .add-button:hover {
-    transform: scale(1.1)
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .listedLinks {
@@ -38,7 +46,7 @@
     flex-direction: column;
     gap: 5px;
     margin: 10px;
-    max-height: 400px;
+    max-height: 800px;
     max-width: 350px;
     overflow-x: auto;
     overflow-y: auto;
@@ -119,3 +127,97 @@
     font-size: 20px;
     color: var(--secundarytextcolor)
 }
+
+/* CONTRASEÑAS */
+.password-dashboard .password-container {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.password-dashboard .lengthPass {
+    width: 200px;
+}
+
+.password-dashboard .resultPass {
+    width: 300px;
+}
+
+
+.closedEyeIcon {
+    width: 20px;
+}
+
+.closedEyeIcon:hover {
+    cursor: pointer;
+}
+
+.main h1 {
+    font-size: var(--titlesizefont);
+    font-weight: bold;
+}
+
+.password-container {
+    background-color: var(--blacktransparentbox);
+    padding: 30px;
+    border-radius: 15px;
+    gap: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.password-container h2 {
+    font-size: 18px;
+}
+
+.input-char, .input-pass {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.lengthPass {
+    height: 22px;
+    font-size: 20px;
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+}
+
+.buttonPass {
+    font-size: 15px;
+    width: 200px;
+    height: 40px;
+    padding: 7px;
+    border-radius: 7px;
+    background-color: var(--colordecoration);
+    transition: 0.08s all linear;
+}
+
+.buttonPass:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.resultPass {
+    background: transparent;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.323);
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+    width: 300px;
+    height: 20px;
+    font-size: 15px;
+}
+
+.password-dashboard {
+    position: absolute;
+    top: 20px;
+    right: 50px
+}
+
+.password-dashboard h1 {
+    margin-bottom: 10px;
+}
+

@@ -40,13 +40,18 @@
     <section class="password-dashboard">
       <h1>Crea tu contraseña segura</h1>
       <div class="password-container">
-          <label for="lengthPass"></label>
-          <input type="number" id="lengthPass" min="12" max="50" step="1">
-          <button id="buttonPass" class="buttonPass">Generar contraseña</button>
-          <input type="password" id="resultPass" class="resultPass" readonly>
-          <button id="togglePass">
-              <img src="./assets/noVisiblePass.png" id="closedEyeIcon" class="closedEyeIcon" alt="closedEyeIcon">
-          </button>
+          <h2>Número de caracteres de tu contraseña:</h2>
+          <div class="input-char">
+              <label for="lengthPass"></label>
+              <input type="number" class="lengthPass" id="lengthPass" min="12" max="50" step="1">
+              <button id="buttonPass" class="buttonPass">Generar contraseña</button>
+          </div>
+          <div class="input-pass">
+              <input type="password" id="resultPass" class="resultPass" readonly>
+              <button id="togglePass">
+                  <img src="./assets/noVisiblePass.png" id="closedEyeIcon" class="closedEyeIcon" alt="closedEyeIcon">
+              </button>
+          </div>
       </div>
     </section>
   </main>
