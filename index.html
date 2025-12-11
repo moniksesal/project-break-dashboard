@@ -4,22 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/global.css">
-  <link rel="stylesheet" href="./css/clock.css">
-  <link rel="stylesheet" href="./css/links.css">
-  <link rel="stylesheet" href="./css/password.css">
-  <link rel="stylesheet" href="./css/weather.css">
+  <link rel="stylesheet" href="./css/index.css">
 </head> 
 <body>
   <main class="main">
     <section class="link-dashboard">
       <div class="link-container">
           <h1>Guarda tus links preferidos</h1>
-          <input type="text" id="nameLink" required placeholder="Añade el nombre...">
-          <input type="text" id="URLLink" required placeholder="Añade el link...">
-          <button id="addButton" class="add-button">Añadir</button>
+          <div class="link-box">
+            <input type="text" class="nameLink" id="nameLink" required placeholder="Añade el nombre...">
+            <input type="text" class="URLLink" id="URLLink" required placeholder="Añade el link...">
+            <button id="addButton" class="add-button">Añadir</button>
+            <ul id="listedLinks" class="listedLinks"></ul>
+          </div>
       </div>
-      <ul id="listedLinks" class="listedLinks"></ul>
     </section>
     <section class="clock-dashboard">
       <div class="clock-container" id="clock-container">
@@ -27,6 +29,8 @@
               <div class="time" id="time"></div>
           </div>
           <div class="date" id="date"></div>
+          <div class="message" id="message"></div>
+
       </div>
     </section>
     <section class="weather-dashboard">

@@ -16,6 +16,7 @@ function getLinks() {
 // función para pintar un link individual en el DOM
 function paintLink(link) {
     const li = document.createElement("li")
+    li.classList.add("link-item")
     li.innerHTML = `
         <a href="${link.url}" target="_blank">${link.name}</a>
         <button class="removeLink">x</button>

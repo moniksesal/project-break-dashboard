@@ -13,7 +13,12 @@ const photos = [
     "./assets/img/c-g-JgDUVGAXsso-unsplash.jpg",
     "./assets/img/alex-dukhanov-ZxZQk7777R4-unsplash.jpg",
     "./assets/img/shot-by-cerqueira-0o_GEzyargo-unsplash.jpg",
-    "./assets/img/jeremy-thomas-E0AHdsENmDg-unsplash.jpg"
+    "./assets/img/jeremy-thomas-E0AHdsENmDg-unsplash.jpg",
+    "./assets/img/the-new-york-public-library-KCj0iqbuXtU-unsplash.jpg",
+    "./assets/img/kien-do-NjT4O7WYmwk-unsplash.jpg",
+    "./assets/img/meiying-ng-OrwkD-iWgqg-unsplash.jpg",
+    "./assets/img/maria-noel-rabunal-cantero-i-8YnfyF0VY-unsplash.jpg",
+    "./assets/img/guillaume-galtier-3YrppYQPoCI-unsplash.jpg"
 ]
 
 function changeBackground() {
