@@ -1,7 +1,9 @@
 .main {
-    display: flex;
-    flex-wrap: wrap;
-
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    justify-items: center; /* Centra cada tarjeta */
 }
 
 /*LINKS*/
@@ -16,7 +18,7 @@
     border-radius: 15px;
     gap: 10px;
     margin-top: 10px;
-    height: 800px;
+    height: 300px;
 }
 
 .nameLink, .URLLink {
@@ -92,16 +94,12 @@
 /* RELOJ */
 
 .clock-container {
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.332);
-    padding: 50px;
+    padding: 60px;
     border-radius: 15px;
     gap: 10px;
 }
@@ -211,13 +209,90 @@
     font-size: 15px;
 }
 
-.password-dashboard {
-    position: absolute;
-    top: 20px;
-    right: 50px
-}
-
 .password-dashboard h1 {
     margin-bottom: 10px;
 }
 
+/* ESTACIÓN DEL TIEMPO */
+
+.futureWeather {
+    display: flex;
+    max-width: 800px;
+    overflow-x: auto;
+}
+
+.weatherContainer {
+    background-color: var(--blacktransparentbox);
+    padding: 30px;
+    border-radius: 15px;
+    gap: 10px;
+    width: 800px;
+}
+
+.subContainer {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    color: var(--secundarytextcolor);
+    font-weight: bold;
+}
+
+.actualWeather h1 {
+    font-size: 20px;
+}
+
+.actualWeather h2 {
+    color: var(--colordecoration);
+}
+
+.actualWeatherContainer {
+    display: flex;
+    gap: 10px;
+    margin: 15px
+}
+
+.temp {
+    font-size: 50px;
+}
+
+.futureWeather {
+    display: flex;
+    gap: 20px
+}
+
+.forecastContainer {
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.temperature {
+    color: var(--colordecoration);
+    font-weight: bold;
+}
+
+/* RESPONSIVE */
+
+
+/* Orden dashboard pantallas grandes */
+.weather-dashboard { grid-column: 2 ; grid-row: 1; }
+.link-dashboard { grid-column: 1; grid-row: 2; }
+.clock-dashboard { grid-column: 2; grid-row: 2; }
+.password-dashboard { grid-column: 3; grid-row: 2; }
+
+/* Responsive para pantallas medianas */
+@media (max-width: 1400px) {
+.clock-dashboard { grid-column: 1; grid-row: 1; }
+.weather-dashboard { grid-column:  1; grid-row: 3; }
+.link-dashboard { grid-column: 1; grid-row: 2; }
+.password-dashboard { grid-column: 1; grid-row: 4; }
+}
+
+/* Responsive para móviles */
+
+@media (max-width: 800px) {
+.clock-dashboard { grid-column: 1; grid-row: 1; }
+.weather-dashboard { grid-column:  1; grid-row: 3; }
+.link-dashboard { grid-column: 1; grid-row: 2; }
+.password-dashboard { grid-column: 1; grid-row: 4; }
+}

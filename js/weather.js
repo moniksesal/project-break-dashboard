@@ -42,15 +42,15 @@ const currentWeather = (data) => {
     <h1>${city} / ${country}</h1>
     <h2>${text}</h2>
     <div class="actualWeatherContainer">
-    <img src="${icon}" alt="${text}"/>
-        <p>${temp_c} Cº</p>
+        <img src="${icon}" alt="${text}"/>
+        <p class="temp">${temp_c} Cº</p>
         <div class="subContainer">
-        <p>Precipitaciones: ${rain}%</p>
-        <p>Humedad: ${humidity}%</p>
-        <p>Viento: ${wind_kph} Km/h</p>
+            <p>Precipitaciones: ${rain}%</p>
+            <p>Humedad: ${humidity}%</p>
+            <p>Viento: ${wind_kph} Km/h</p>
         </div>
-        </div>
-        `
+    </div>
+    `
     actualWeather.innerHTML = actualTemplate
 }
 
@@ -64,7 +64,7 @@ const forecastWeather = (data) => {
             <div class="forecastContainer">
                 <h3>${hour}:${minute}</h3>
                 <img src="${icon}"/>
-                <p>${temp_c} Cº</p>
+                <p class="temperature">${temp_c} Cº</p>
             </div>
         `
     })

@@ -1,0 +1,83 @@
+/* HEADER */
+header {
+    margin: 20px;
+    display: flex;
+}
+
+header img {
+    width: 50px;
+    filter: invert(1) brightness(2);
+}
+
+header a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+/* MIS CSS */
+
+.futureWeather {
+    display: flex;
+    max-width: 900px;
+    overflow-x: auto;
+}
+
+.weatherContainer {
+    background-color: var(--blacktransparentbox);
+    padding: 30px;
+    border-radius: 15px;
+    gap: 10px;
+    width: 950px;
+}
+
+.subContainer {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    color: var(--secundarytextcolor);
+    font-weight: bold;
+}
+
+.actualWeather h1 {
+    font-size: 20px;
+}
+
+.actualWeather h2 {
+    color: var(--colordecoration);
+}
+
+.actualWeatherContainer {
+    display: flex;
+    gap: 10px;
+    margin: 15px
+}
+
+.temp {
+    font-size: 50px;
+}
+
+.futureWeather {
+    display: flex;
+    gap: 20px
+}
+
+.forecastContainer {
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.temperature {
+    color: var(--colordecoration);
+    font-weight: bold;
+}
+
+.weatherContainer{
+    position: absolute;
+    top: 47%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+}
