@@ -140,7 +140,6 @@
     width: 300px;
 }
 
-
 .closedEyeIcon {
     width: 20px;
 }
@@ -273,7 +272,6 @@
 
 /* RESPONSIVE */
 
-
 /* Orden dashboard pantallas grandes */
 .weather-dashboard { grid-column: 2 ; grid-row: 1; }
 .link-dashboard { grid-column: 1; grid-row: 2; }
@@ -290,9 +288,14 @@
 
 /* Responsive para móviles */
 
-@media (max-width: 800px) {
+
+@media (max-width: 1040px) {
 .clock-dashboard { grid-column: 1; grid-row: 1; }
 .weather-dashboard { grid-column:  1; grid-row: 3; }
 .link-dashboard { grid-column: 1; grid-row: 2; }
 .password-dashboard { grid-column: 1; grid-row: 4; }
+.weatherContainer { width: 350px; }
+.footer{
+    height: 100px;
+}
 }
